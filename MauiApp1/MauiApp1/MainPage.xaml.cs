@@ -9,6 +9,11 @@
             InitializeComponent();
         }
 
+        private void OnFindMeClicked(object sender, EventArgs e)
+        {
+            EnternameButton.Text = UsernameEntry.Text;
+            SemanticScreenReader.Announce(EnternameButton.Text);
+        }
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;

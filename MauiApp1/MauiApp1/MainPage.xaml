@@ -17,6 +17,14 @@
                 Text="Hello, World!233"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <Entry
+                Placeholder="Enter Your Name"
+                x:Name="UsernameEntry"/>
+            <Button
+                x:Name="EnternameButton"
+                Text="Find Me"
+                Clicked="OnFindMeClicked"
+                />
 
             <Label
                 Text="Welcome to &#10;.NET Multi-platform App UI"
